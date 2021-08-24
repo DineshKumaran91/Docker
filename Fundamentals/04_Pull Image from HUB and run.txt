@@ -25,6 +25,7 @@ $docker exec -it <container name/ID> /bin/sh --> to login to a container
 $docker stop <container name/ID> --> we can stop the container
 $docker start <container name/ID> --> we can start the container
 $docker rm <container name/ID> --> we can't remove the running container
+$docker rm $(docker ps -a -p)
 $docker rmi  <image-id> --> uses to remove the images
 
 
