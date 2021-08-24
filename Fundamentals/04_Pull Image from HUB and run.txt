@@ -1,0 +1,34 @@
+docker HUB : https://hub.docker.com/
+
+$docker version -->  chech the version of the local docker client
+
+$docker login --> login to docker hub account from local client.
+
+$docker logout --> Logout from docker hub
+
+$docker pull stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE  --> which uses to download images from docker hub and save it locally.
+
+$docker images --> Using this downloaded images which saved in local
+
+$docker run --name app1 -p 80:8080 -d stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE --> Run the image and access the resource from locally
+
+Explained above command:
+docker run --name app1(container name) -p 80(local port):8080(container port) -d stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE --> Run the image and access the resource from locally
+
+$docker ps --> list running containers
+$docker ps -q --> List only container ID's
+$docker ps -a --> list all containers, means stopped also
+$docker ps -a -q --> list all the container ID's
+
+$docker exec -it <container name/ID> /bin/sh --> to login to a container
+
+$docker stop <container name/ID> --> we can stop the container
+$docker start <container name/ID> --> we can start the container
+$docker rm <container name/ID> --> we can't remove the running container
+$docker rmi  <image-id> --> uses to remove the images
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Docker Architecture:
+
+Docker Host:(inside this)
+ - Docker Deamon : means dockerd listens for docker API(commands) and manages the objects such as doc image,containers,network and volumes.
+ - Docker Client : (optional)  can be present in docker host or other machine, which uses to communicate to docker. Can communicate with more that one Deamon
+ - Docker Images: is read only template for creating docker containers..with some additional customization.
+ - Docker container - Is runnable instance..Create,start,stop,move or delete it..We can create new container from current state,add more network & add storage to it.
+
+ 
+ 

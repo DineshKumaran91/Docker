@@ -1,0 +1,35 @@
+Docker Intro:
+
+Problem with traditional infra(withou docker):
+Hardware --> OS --> Apps(Libraries & Dependencies)
+
+Example:
+Web_server    App_server    DB_server
+Libraries     Libraries     Libraries
+Depend(apps)  Depend(apps)  Depend(apps)
+
+- Above process are time consuming,since need to do all the steps in each servers also on each environment(dev,qa,staging,production)
+- Need to keep resolving the issues in libraries and dependencies.
+- Inconsistencies accross environments  --> very hard to trach changes in other environments Dev/QA/Staging/Prod
+- Server Support(both hardware and software),patching too
+
+
+Docker Infra:
+Docker Physical infra:              Docker Virtual infra:
+Containers(with particular apps)    Containers(with particular apps)
+Docker                              Docker
+Operating system                    Virtual machine 
+Hardware                            Hypervisor
+                                    Hardware
+
+- Install single app in one container and it's lib/dependent files.
+- So we can package and keep a containers for future use.
+- we can run n'numbers of of containers based on available resource we have
+
+Advantages:
+ - Containers are flexible(most conplex apps also can be containerized)
+ - Portable (create a container and deploy to the cloud for future user)
+ - Loosely Coupled --> allow us to update one container without disturbing other.
+ - scalable --> can increase the container counts
+ - Secure
+

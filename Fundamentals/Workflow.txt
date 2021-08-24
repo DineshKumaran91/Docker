@@ -1,0 +1,5 @@
+docker client:
+$docker pull nginxdemos/hello -->will download the image from docker registry/hub..We can have our own private registry and maintain images
+
+$docker run -p 82:80 -d nginxdemos/hello --> Once downloaded, run the image as container. If not downloaded also it can download itself
+
